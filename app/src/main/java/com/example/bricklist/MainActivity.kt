@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity()  {
 
         loadPreferences()
         val myDBHandler: MyDBHandler = MyDBHandler(this)
-        myDBHandler.copyDB()
+        myDBHandler.createDB()
 
         settingsButton.setOnClickListener{
             startActivity(Intent(this, SettingsActivity::class.java))
